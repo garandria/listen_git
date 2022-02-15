@@ -14,8 +14,12 @@ int main (int argc, char **argv)
         git_libgit2_init();
         error = git_clone(&repo, URL, PATH, NULL);
         if (error == GIT_EEXISTS){
-                printf("Path %s already exists.\n Opening %s...", PATH, PATH);
-                git_repository_open(&repo, PATH);
+                printf("Path %s already exists.\nOpening %s...", PATH, PATH);
+                if (git_repository_open(&repo, PATH))
+                        printf("failed");
+                else
+                        printf("done");
+                printf("\n");
         }
 
         return 0;

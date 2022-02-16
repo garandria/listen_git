@@ -1,13 +1,21 @@
 
+1 Build
+═══════
 
-Requirements
-------------
+  • Compile
+    ┌────
+    │ make
+    └────
+  • Run
+    ┌────
+    │ ./lg_main
+    └────
 
-* LibGit2 [1]
+
+2 Requirements
+══════════════
+
+  • LibgGit2 [1]
 
 
-
-
-
----
-[1] https://libgit2.org/
+[1] <https://libgit2.org/>
